@@ -1,8 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Trans } from 'react-i18next';
 
 function App() {
+
+  const name = "World"
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +21,7 @@ function App() {
         >
           Learn React
         </a>
+        <Trans>Hello, <strong>{{ name }}</strong>!</Trans>
       </header>
     </div>
   );
